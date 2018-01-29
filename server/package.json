@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engine": {
+    "node": "9.4.0",
+    "npm": "5.6.0"
+  },
   "scripts": {
+    "start": "node index.js",
     "lint": "eslint '**/*.{js,}'",
     "format": "prettier --write '**/*.{js,}'"
   },
