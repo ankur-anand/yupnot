@@ -10,12 +10,15 @@
   "scripts": {
     "start": "node index.js",
     "lint": "eslint '**/*.{js,}'",
-    "format": "prettier --write '**/*.{js,}'"
+    "format": "prettier --write '**/*.{js,}'",
+    "dev": "nodemon index.js"
   },
   "author": "\"Ankur Anand\"",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "passport": "^0.4.0",
+    "passport-google-oauth20": "^1.0.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
@@ -23,6 +26,7 @@
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-import": "^2.8.0",
+    "nodemon": "^1.14.11",
     "prettier": "^1.10.2"
   }
 }
