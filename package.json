@@ -11,13 +11,9 @@
     "start": "node index.js",
     "lint": "eslint '**/*.{js,}'",
     "format": "prettier --write '**/*.{js,}'",
-<<<<<<< HEAD
     "server": "nodemon index.js",
     "client": "npm run start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
-=======
-    "dev": "nodemon index.js"
->>>>>>> fc620aa5a2091aa7f3b5ca52d102ca3b6b335f16
   },
   "author": "\"Ankur Anand\"",
   "license": "ISC",
@@ -30,10 +26,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
-<<<<<<< HEAD
     "concurrently": "^3.5.1",
-=======
->>>>>>> fc620aa5a2091aa7f3b5ca52d102ca3b6b335f16
     "eslint": "^4.16.0",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-config-prettier": "^2.9.0",
