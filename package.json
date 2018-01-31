@@ -11,7 +11,9 @@
     "start": "node index.js",
     "lint": "eslint '**/*.{js,}'",
     "format": "prettier --write '**/*.{js,}'",
-    "dev": "nodemon index.js"
+    "server": "nodemon index.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "\"Ankur Anand\"",
   "license": "ISC",
@@ -24,6 +26,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
+    "concurrently": "^3.5.1",
     "eslint": "^4.16.0",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-config-prettier": "^2.9.0",
