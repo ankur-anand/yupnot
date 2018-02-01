@@ -3,9 +3,10 @@
     "es6": true,
     "node": true,
     "mocha": true,
-    "mongo": true
+    "mongo": true,
+    "browser": true
   },
-  "extends": ["airbnb-base", "prettier"],
+  "extends": ["airbnb-base", "prettier", "plugin:react/recommended"],
   "parser": "babel-eslint",
   "rules": {
     "func-names": ["warn", "always"],
