@@ -9,7 +9,7 @@
   "extends": ["airbnb-base", "prettier", "plugin:react/recommended"],
   "parser": "babel-eslint",
   "rules": {
-    "class-methods-use-this": 0,
+    "class-methods-use-this": ["off", "always"],
     "func-names": ["warn", "always"],
     "curly": ["error", "multi-line"],
     "no-trailing-spaces": "warn",
@@ -25,7 +25,7 @@
     "no-undefined": "error",
     "semi": ["warn", "always"],
     "no-param-reassign": "warn",
-    "consistent-return": "warn",
+    "consistent-return": "off",
     "one-var": "warn",
     "comma-dangle": "warn",
     "no-multiple-empty-lines": [
