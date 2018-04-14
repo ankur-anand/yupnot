@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 class Header extends Component {
+  static propTypes = {
+    auth: PropTypes.oneOfType([PropTypes.bool, PropTypes.object]),
+  };
   renderContent() {
     switch (this.props.auth) {
       case null:

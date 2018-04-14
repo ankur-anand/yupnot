@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import * as actions from '../actions';
 
 import Header from './Header.jsx';
@@ -10,6 +11,9 @@ const DashBoard = () => <h2> DashBoard </h2>;
 const SurveyNew = () => <h2> SurveyNew </h2>;
 
 class App extends Component {
+  static propTypes = {
+    fetchUser: PropTypes.func,
+  };
   componentDidMount() {
     this.props.fetchUser();
   }
