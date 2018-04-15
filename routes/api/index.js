@@ -1,0 +1,15 @@
+const router = require('express').Router();
+const billing = require('./billing');
+const ensureAuthenticated = require('../../middlewares/ensureAuthenticated');
+
+router.get('/current_user', (req, res) => {
+  res.send(req.user);
+});
+
+router.get('/logout', (req, res) => {
+  req.logout();
+  res.redirect('/');
+});
+
+router.use('/billing', ensureAuthenticated, billing);
+module.exports = router;
