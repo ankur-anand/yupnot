@@ -16,3 +16,5 @@ ReactDOM.render(
   </Provider>,
   document.querySelector('#root'),
 );
+
+console.log(process.env.REACT_APP_STRIPE_KEY);
