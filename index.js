@@ -8,9 +8,10 @@ const keys = require('./config/keys');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-const router = require('./routes');
-
 require('./models/User');
+require('./models/Survey');
+
+const router = require('./routes');
 
 mongoose.connect(keys.mongoDbURI);
 require('./services/passport');
