@@ -24,7 +24,11 @@ class Header extends Component {
           <li key="1">
             <Payments />
           </li>,
-          <li key="3" style={{ margin: '0px 10px' }}>
+          <li
+            key="3"
+            className="hide-on-small-and-down"
+            style={{ margin: '0px 10px' }}
+          >
             Credits: {this.props.auth.credits}
           </li>,
           <li key="2">
@@ -35,17 +39,19 @@ class Header extends Component {
   }
   render() {
     return (
-      <nav>
-        <div className="nav-wrapper">
-          <Link
-            to={this.props.auth ? '/surveys' : '/'}
-            className="left brand-logo"
-          >
-            SendMaily
-          </Link>
-          <ul id="nav-mobile" className="right">
-            {this.renderContent()}
-          </ul>
+      <nav className="purple">
+        <div className="container">
+          <div className="nav-wrapper">
+            <Link
+              to={this.props.auth ? '/surveys' : '/'}
+              className="left brand-logo"
+            >
+              SendMaily
+            </Link>
+            <ul id="nav-mobile" className="right">
+              {this.renderContent()}
+            </ul>
+          </div>
         </div>
       </nav>
     );

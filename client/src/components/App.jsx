@@ -6,9 +6,8 @@ import * as actions from '../actions';
 
 import Header from './Header.jsx';
 import Landing from './Landing.jsx';
-
-const DashBoard = () => <h2> DashBoard </h2>;
-const SurveyNew = () => <h2> SurveyNew </h2>;
+import DashBoard from './Dashhboard.jsx';
+import SurveyNew from './surveys/SurveyNew.jsx';
 
 class App extends Component {
   static propTypes = {
@@ -19,7 +18,7 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="container">
+      <div>
         <BrowserRouter>
           <div>
             <Header />
