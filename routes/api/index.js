@@ -13,5 +13,6 @@ router.get('/logout', (req, res) => {
 });
 
 router.use('/billing', ensureAuthenticated, billing);
-router.use('/surveys', ensureAuthenticated, surveys);
+router.use('/surveys', surveys);
+
 module.exports = router;
