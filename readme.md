@@ -13,8 +13,6 @@ validity date.
 
 and start sending your survey
 
-Some example image
-
 ![Payment](./exampleImage/payment.png)
 ![create-survey](./exampleImage/createsurvey.png)
 ![after-vote](./exampleImage/afterVote.png)
