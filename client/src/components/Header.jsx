@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-
+import brandlogo from '../yupnotlogo.png';
 import Payments from './Payments.jsx';
 
 class Header extends Component {
@@ -46,7 +46,7 @@ class Header extends Component {
               to={this.props.auth ? '/surveys' : '/'}
               className="left brand-logo"
             >
-              SendMaily
+              <img src={brandlogo} style={{ marginTop: '10px' }} />
             </Link>
             <ul id="nav-mobile" className="right">
               {this.renderContent()}

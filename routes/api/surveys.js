@@ -48,6 +48,13 @@ router.post('/webhooks/sendgrid', (req, res) => {
   });
   res.send({});
 });
+
+router.get('/', ensureAuthenticated, async (req, res) => {
+  const surveys = await Survey.find({ _user: req.user.id }).select({
+    recipients: false,
+  });
+  res.send(surveys);
+});
 router.post('/', ensureAuthenticated, ensureCredits, async (req, res, next) => {
   const { title, subject, body, recipients } = req.body.surveys;
 
